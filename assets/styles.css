@@ -12,6 +12,10 @@ a {
     color: #4ea7ff;
 }
 
+a:active {
+    color: #4e7aff;
+}
+
 .thumbnail {
     height: 70vh;
 }
@@ -108,6 +112,12 @@ a {
     margin: 20px;
 
     user-select: none;
+
+    transition: 0.3s;
+}
+
+.drop-down-button:hover {
+    background-color: #ffffff11;
 }
 
 .drop-down-arrow {
