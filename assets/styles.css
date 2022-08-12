@@ -79,3 +79,34 @@ body {
 .social-img:hover {
     transform: scale(1.1);
 }
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+
+    height: 30vh;
+}
+
+.drop-down-button {
+    font-size: 22px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 400px;
+    margin: 20px;
+}
+
+.drop-down-arrow {
+    width: 20px;
+    height: 20px;
+
+    opacity: 0.7;
+
+    transform: rotate(180deg);
+    transition: 0.8s;
+}
