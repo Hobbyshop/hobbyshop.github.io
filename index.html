@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="./index.js" defer></script>
     <link rel="stylesheet" href="./assets/styles.css">
 
     <title>Hobbyshop</title>
@@ -39,19 +40,33 @@
 
     <div class="footer">
         
-        <div class="panel drop-down-button">
+        <div class="panel drop-down-button" id="drop-about" onclick="extend('drop-about')">
             About me
             <img class="drop-down-arrow" src="./assets/icons/arrow.png">
+            <div class="panel drop-down">
+                My name is Marc. I am a 15 year-old developer from Germany. <br><br>
+                I got into coding about three years ago when I started developing Plugins for Minecraft Servers. <br>
+                Since then I have gained experience in languages like Java, Kotlin and C++
+            </div>
         </div>
 
-        <div class="panel drop-down-button">
+        <div class="panel drop-down-button" id="drop-work" onclick="extend('drop-work')">
             My work
             <img class="drop-down-arrow" src="./assets/icons/arrow.png">
+            <div class="panel drop-down">
+                In the past I have worked on a Minecraft pvp client called Lux Client. The project was ended recently
+                but a working version is still avalible at the <a href="https://discord.gg/EzQj29Czke" target="_blank">discord server</a>. <br>
+                At the moment my main goal is to learn OpenGL.
+            </div>
         </div>
         
-        <div class="panel drop-down-button">
+        <div class="panel drop-down-button" id="drop-contact" onclick="extend('drop-contact')">
             Contact me
             <img class="drop-down-arrow" src="./assets/icons/arrow.png">
+            <div class="panel drop-down">
+                If you want to get in contact with me, just message me on discord. My user profile is avalible through the
+                discord icon above.
+            </div>
         </div>
         
     </div>

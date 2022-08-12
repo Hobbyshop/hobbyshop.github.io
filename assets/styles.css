@@ -8,6 +8,10 @@ body {
     padding: 0px;
 }
 
+a {
+    color: #4ea7ff;
+}
+
 .thumbnail {
     height: 70vh;
 }
@@ -90,6 +94,8 @@ body {
 }
 
 .drop-down-button {
+    cursor: pointer;
+
     font-size: 22px;
 
     display: flex;
@@ -98,7 +104,10 @@ body {
     justify-content: space-between;
 
     width: 400px;
+    height: 30px;
     margin: 20px;
+
+    user-select: none;
 }
 
 .drop-down-arrow {
@@ -108,5 +117,26 @@ body {
     opacity: 0.7;
 
     transform: rotate(180deg);
-    transition: 0.8s;
+    transition: 0.5s;
+}
+
+.drop-down {
+    display: none;
+
+    position: absolute;
+
+    width: calc(100% - 20px);
+    height: auto;
+
+    left: 0px;
+    bottom: 0px;
+    padding-bottom: 60px;
+}
+
+::selection {
+    background-color: rgba(159, 89, 216, 0.382);
+}
+
+::-moz-selection {
+    background-color: rgba(159, 89, 216, 0.382);
 }
