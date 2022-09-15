@@ -8,9 +8,30 @@ body {
     color: #ffffffb7;
 
     background-image: url(./background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
     margin: 0px;
     padding: 0px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 100;
+
+    margin: 5px;
+}
+
+h2 {
+    margin: 20px;
+    margin-bottom: 0px;
+}
+
+p {
+    font-weight: 100;
+    font-size: 20px;
+
+    margin-bottom: 50px;
 }
 
 a {
@@ -21,8 +42,8 @@ a:active {
     color: #4e7aff;
 }
 
-.thumbnail {
-    height: 70vh;
+.page-wrapper {
+    margin: 50px;
 }
 
 .centered-wrapper {
@@ -30,18 +51,16 @@ a:active {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    height: 100%;
 }
 
 .panel {
     background-color: #ffffff08;
     
-    padding: 10px;
+    padding: 30px;
     border-radius: 8px;
     border: 2px solid #ffffff05;
 
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(12px);
 
     -webkit-box-shadow: -4px 4px 19px 6px rgba(0,0,0,0.3); 
     box-shadow: -4px 4px 19px 6px rgba(0,0,0,0.3);
@@ -51,6 +70,18 @@ a:active {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.divider {
+    background-color: #ffffff58;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    width: 80%;
+    height: 2px;
+
+    filter: blur(2px);
 }
 
 .avatar {
@@ -63,89 +94,20 @@ a:active {
     border-radius: 40px;
 }
 
-.socials-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-    width: 60px;
-    margin: 8px;
-}
-
-.name {
-    font-weight: 400;
-
-    margin: 8px;
-    margin-bottom: 0px;
-}
-
 .social-img {
     opacity: 0.7;
 
     width: 25px;
     height: 25px;
 
+    padding-left: 10px;
+    padding-right: 10px;
+
     transition: 0.5s;
 }
 
 .social-img:hover {
     transform: scale(1.1);
-}
-
-.footer {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-evenly;
-
-    height: 30vh;
-}
-
-.drop-down-button {
-    cursor: pointer;
-
-    font-size: 22px;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-    width: 400px;
-    height: 30px;
-    margin: 20px;
-
-    user-select: none;
-
-    transition: 0.3s;
-}
-
-.drop-down-button:hover {
-    background-color: #ffffff11;
-}
-
-.drop-down-arrow {
-    width: 20px;
-    height: 20px;
-
-    opacity: 0.7;
-
-    transform: rotate(180deg);
-    transition: 0.5s;
-}
-
-.drop-down {
-    display: none;
-
-    position: absolute;
-
-    width: calc(100% - 20px);
-    height: auto;
-
-    left: 0px;
-    bottom: 0px;
-    padding-bottom: 60px;
 }
 
 ::selection {
