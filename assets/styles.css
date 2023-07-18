@@ -57,7 +57,7 @@ a:active {
     background-color: #ffffff08;
     
     padding: 30px;
-    border-radius: 8px;
+    border-radius: 16px;
     border: 2px solid #ffffff05;
 
     backdrop-filter: blur(12px);
